@@ -1,4 +1,5 @@
 import {Routes, Route, Link} from 'react-router-dom'
+import SearchPage from './pages/SearchPage';
 import './App.css'
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path = "/" element = {<div>Search Page</div>} />
+        <Route path = "/" element = {<SearchPage />} />
         <Route path = "/watchlist" element = {<div>Watchlist Page</div>} />
         <Route path = "/movie/:id" element = {<div>Movie Details Page</div>} />
         <Route path="*" element={<div>404 Not Found</div>} />
